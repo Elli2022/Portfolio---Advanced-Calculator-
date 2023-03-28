@@ -8,6 +8,8 @@ const operatorButtons = document.querySelectorAll(
 ) as NodeListOf<HTMLButtonElement>;
 const equalsButton = document.querySelector(".equals") as HTMLButtonElement;
 const clearButton = document.querySelector(".clear") as HTMLButtonElement;
+const decimalButton = document.querySelector(".decimal") as HTMLButtonElement;
+
 
 // Initialize variables to store operands and operator
 let firstOperand: number | null = null;
@@ -35,6 +37,13 @@ operatorButtons.forEach((button) => {
     }
   });
 });
+
+//Add event listeners for decimal button
+decimalButton.addEventListener("click", () => {
+    if (!display.value.includes(".")) {
+      display.value += ".";
+    }
+  });
 
 // Add event listener for equals button
 equalsButton.addEventListener("click", () => {

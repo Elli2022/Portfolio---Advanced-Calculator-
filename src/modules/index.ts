@@ -56,16 +56,6 @@ sqrtButton.addEventListener("click", () => {
   });
 
 
-  //Add event listeners for parenthesis button
-  parenthesisButton.addEventListener("click", () => {
-    if (!display.value.includes("(")) {
-      display.value += "(";
-    }
-    else if (!display.value.includes(")")) {
-      display.value += ")";
-    }
-  });
-
 
 // Add event listener for equals button
 equalsButton.addEventListener("click", () => {

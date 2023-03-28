@@ -9,7 +9,8 @@ const operatorButtons = document.querySelectorAll(
 const equalsButton = document.querySelector(".equals") as HTMLButtonElement;
 const clearButton = document.querySelector(".clear") as HTMLButtonElement;
 const decimalButton = document.querySelector(".decimal") as HTMLButtonElement;
-
+const parenthesisButton = document.querySelector(".parenthesis") as HTMLButtonElement;
+const sqrtButton = document.querySelector(".sqrt") as HTMLButtonElement;
 
 // Initialize variables to store operands and operator
 let firstOperand: number | null = null;
@@ -45,7 +46,27 @@ decimalButton.addEventListener("click", () => {
     }
   });
 
-  
+// Add event listener for square root button
+sqrtButton.addEventListener("click", () => {
+    // Check if the display value is a valid number
+    if (!isNaN(parseFloat(display.value))) {
+      // Calculate the square root and update the display value
+      display.value = Math.sqrt(parseFloat(display.value)).toString();
+    }
+  });
+
+
+  //Add event listeners for parenthesis button
+  parenthesisButton.addEventListener("click", () => {
+    if (!display.value.includes("(")) {
+      display.value += "(";
+    }
+    else if (!display.value.includes(")")) {
+      display.value += ")";
+    }
+  });
+
+
 // Add event listener for equals button
 equalsButton.addEventListener("click", () => {
   // Check if the first operand and current operator are set

@@ -1,8 +1,8 @@
-const display = document.getElementById('display') as HTMLInputElement;
+const display = document.getElementById('.display') as HTMLInputElement;
 const numberButtons = document.querySelectorAll('[data-number]') as NodeListOf<HTMLButtonElement>;
 const operatorButtons = document.querySelectorAll('[data-operator]') as NodeListOf<HTMLButtonElement>;
-const equalsButton = document.querySelector('equals') as HTMLButtonElement;
-const clearButton = document.querySelector('clear') as HTMLButtonElement;
+const equalsButton = document.querySelector('.equals') as HTMLButtonElement;
+const clearButton = document.querySelector('.clear') as HTMLButtonElement;
 
 let firstOperand: number | null=null;
 let secondOperand: number |null = null;

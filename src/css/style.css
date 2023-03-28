@@ -54,4 +54,36 @@
   button:hover {
     background-color: #c9ada7;
   }
+  /* Operator buttons */
+button[data-operator] {
+    background-color: #e56b6f;
+    }
+    
+    button[data-operator]:hover {
+    background-color: #ff8a85;
+    }
+    
+    /* Control buttons */
+    button.equals,
+    button.clear,
+    button.decimal {
+    background-color: #2a9d8f;
+    }
+    
+    button.equals:hover,
+    button.clear:hover,
+    button.decimal:hover {
+    background-color: #35a79c;
+    }
+    
+    /* Equals button */
+    button.equals {
+    grid-column: 3 / span 2;
+    }
+    
+    /* Clear and decimal buttons */
+    button.clear,
+    button.decimal {
+    grid-column-end: span 2;
+    }
   

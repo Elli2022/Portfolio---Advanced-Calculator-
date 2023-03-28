@@ -53,4 +53,28 @@ button:hover {
   background-color: #c9ada7;
 }
 
+button[data-operator] {
+  background-color: #e56b6f;
+}
+
+button[data-operator]:hover {
+  background-color: #ff8a85;
+}
+
+button.equals, button.clear, button.decimal {
+  background-color: #2a9d8f;
+}
+
+button.equals:hover, button.clear:hover, button.decimal:hover {
+  background-color: #35a79c;
+}
+
+button.equals {
+  grid-column: 3 / span 2;
+}
+
+button.clear, button.decimal {
+  grid-column-end: span 2;
+}
+
 /*# sourceMappingURL=index.c92073ef.css.map */

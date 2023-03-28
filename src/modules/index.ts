@@ -45,6 +45,7 @@ decimalButton.addEventListener("click", () => {
     }
   });
 
+  
 // Add event listener for equals button
 equalsButton.addEventListener("click", () => {
   // Check if the first operand and current operator are set
